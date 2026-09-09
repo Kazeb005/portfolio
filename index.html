@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAZE Ralph Bertrand | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- PDF Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body{
+      background:#0f172a;
+      color:#e2e8f0;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .glass{
+      background:rgba(255,255,255,.05);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .chip{
+      display:inline-block;
+      background:#1e293b;
+      padding:6px 14px;
+      border-radius:999px;
+      margin:4px;
+      font-size:.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 w-full bg-slate-950/80 backdrop-blur border-b border-slate-800 z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="text-xl font-bold text-sky-400">KAZE Ralph Bertrand</h1>
+
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="#about" class="hover:text-sky-400">About</a>
+      <a href="#skills" class="hover:text-sky-400">Skills</a>
+      <a href="#projects" class="hover:text-sky-400">Projects</a>
+      <a href="#resume" class="hover:text-sky-400">Resume</a>
+      <a href="#contact" class="hover:text-sky-400">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="pt-36 pb-24 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+
+    <div>
+      <p class="text-sky-400 font-semibold text-lg">Hello, I'm</p>
+
+      <h1 class="text-5xl md:text-6xl font-extrabold mt-3 leading-tight">
+        Ralph <span class="text-sky-400">Bertrand</span>
+      </h1>
+
+      <h2 class="text-2xl mt-4 text-slate-300">
+        IT Student • Aspiring Software Engineer
+      </h2>
+
+      <p class="mt-7 text-slate-400 leading-8">
+        Information Technology student at the Adventist University of Central Africa
+        (AUCA) with hands-on experience in software development, cybersecurity,
+        Linux administration and DevOps infrastructure. Currently building
+        <strong>Temba Concierge</strong>, a travel-booking platform for Rwanda and East Africa.
+      </p>
+
+      <div class="mt-8 flex gap-4 flex-wrap">
+        <a href="#resume"
+           class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-xl font-semibold">
+          View Resume
+        </a>
+
+        <a href="https://github.com/kazeb005" target="_blank"
+           class="border border-slate-600 hover:border-sky-400 px-6 py-3 rounded-xl">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="glass rounded-3xl p-8 text-center">
+
+      <div class="w-32 h-32 rounded-full bg-sky-500 flex items-center justify-center text-5xl font-bold mx-auto">
+        KR
+      </div>
+
+      <h3 class="text-2xl font-bold mt-5">KAZE Ralph Bertrand</h3>
+
+      <p class="text-slate-400 mt-2">Kigali, Rwanda</p>
+
+      <div class="mt-6 text-left space-y-3 text-sm">
+        <p>📧 kazeralph005@gmail.com</p>
+        <p>📱 +250 791 982 401</p>
+        <p>🎓 AUCA (2024–2027)</p>
+        <p>💻 github.com/kazeb005</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="text-3xl font-bold mb-8">About Me</h2>
+
+    <div class="glass rounded-2xl p-8">
+
+      <p class="leading-8 text-slate-300">
+        I enjoy building secure and scalable applications while exploring backend
+        engineering, cloud infrastructure and cybersecurity. My experience ranges
+        from Java object-oriented programming and React Native mobile development
+        to Docker Swarm deployments and vulnerability assessment & penetration testing.
+      </p>
+
+      <p class="leading-8 text-slate-300 mt-4">
+        I'm currently seeking internship and junior software engineering opportunities
+        where I can contribute to real-world products and continue growing as a
+        full-stack and DevOps engineer.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-20 px-6 bg-slate-900/40">
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="text-3xl font-bold mb-8">Technical Skills</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-semibold text-sky-400 mb-4">Development</h3>
+
+        <span class="chip">Java</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">Express</span>
+        <span class="chip">React Native</span>
+        <span class="chip">Expo</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">Directus</span>
+      </div>
+
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-semibold text-sky-400 mb-4">
+          DevOps & Security
+        </h3>
+
+        <span class="chip">Docker Swarm</span>
+        <span class="chip">Traefik</span>
+        <span class="chip">Nginx</span>
+        <span class="chip">Apache2</span>
+        <span class="chip">AWS EC2</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Metasploit</span>
+        <span class="chip">CyberChef</span>
+        <span class="chip">wfuzz</span>
+        <span class="chip">Suricata IDS</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="text-3xl font-bold mb-10">Featured Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold text-sky-400">Temba Concierge</h3>
+
+        <p class="mt-3 text-slate-300 leading-7">
+          Developing a Rwanda & East Africa travel-booking platform using
+          Next.js, React Native, Node.js, PostgreSQL and Directus.
+        </p>
+
+        <div class="mt-4">
+          <span class="chip">Next.js</span>
+          <span class="chip">React Native</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold text-sky-400">
+          Hospital Management System
+        </h3>
+
+        <p class="mt-3 text-slate-300 leading-7">
+          Java application applying SOLID principles and the Strategy Pattern,
+          including a MoMo payment implementation for Rwanda.
+        </p>
+
+        <div class="mt-4">
+          <span class="chip">Java</span>
+          <span class="chip">SOLID</span>
+          <span class="chip">Strategy Pattern</span>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold text-sky-400">
+          VAPT Security Labs
+        </h3>
+
+        <p class="mt-3 text-slate-300 leading-7">
+          Executed SQL injection, privilege escalation, reverse shells,
+          credential capture and buffer overflow exploitation on VulnHub
+          and DVWA environments.
+        </p>
+
+        <div class="mt-4">
+          <span class="chip">Kali Linux</span>
+          <span class="chip">Metasploit</span>
+          <span class="chip">CyberChef</span>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold text-sky-400">
+          Docker Swarm Infrastructure
+        </h3>
+
+        <p class="mt-3 text-slate-300 leading-7">
+          Hardened multi-host deployment with Traefik reverse proxy,
+          TLS encryption, Apache2, Nginx, ModSecurity and UFW.
+        </p>
+
+        <div class="mt-4">
+          <span class="chip">Docker</span>
+          <span class="chip">Traefik</span>
+          <span class="chip">Nginx</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section id="resume" class="py-20 px-6 bg-slate-900/40">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 mb-8">
+      <h2 class="text-3xl font-bold">Resume</h2>
+
+      <button onclick="downloadResume()"
+        class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-xl font-semibold">
+        Download PDF Resume
+      </button>
+    </div>
+
+    <div class="glass rounded-2xl p-8">
+
+      <h3 class="text-3xl font-bold">KAZE Ralph Bertrand</h3>
+
+      <p class="text-sky-400 mt-2">
+        IT Student • Aspiring Software Engineer
+      </p>
+
+      <hr class="my-6 border-slate-700">
+
+      <h4 class="font-bold text-lg mb-3">Professional Profile</h4>
+
+      <p class="text-slate-300 leading-8">
+        IT student at AUCA with practical experience in software development,
+        cybersecurity, Linux administration and DevOps infrastructure.
+        Passionate about building secure, scalable applications while growing
+        as a backend and cloud engineer.
+      </p>
+
+      <h4 class="font-bold text-lg mt-8 mb-3">Education</h4>
+
+      <div class="space-y-4">
+
+        <div>
+          <h5 class="font-semibold">BSc Information Technology</h5>
+          <p class="text-slate-400">
+            Adventist University of Central Africa (2024–2027)
+          </p>
+        </div>
+
+        <div>
+          <h5 class="font-semibold">Diploma in Software Development</h5>
+          <p class="text-slate-400">
+            Lycée de Kicukiro APADE (2020–2023)
+          </p>
+        </div>
+
+      </div>
+
+      <h4 class="font-bold text-lg mt-8 mb-3">Certifications</h4>
+
+      <ul class="list-disc ml-6 text-slate-300 space-y-2">
+        <li>Software Security & VAPT Practical Labs (AUCA)</li>
+        <li>Java Object-Oriented Programming & Design Patterns</li>
+        <li>Docker Swarm & Linux Server Administration</li>
+      </ul>
+
+      <h4 class="font-bold text-lg mt-8 mb-3">Core Skills</h4>
+
+      <div>
+        <span class="chip">Java</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">React Native</span>
+        <span class="chip">Docker</span>
+        <span class="chip">Linux</span>
+        <span class="chip">AWS</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">PostgreSQL</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h2 class="text-3xl font-bold">Let's Connect</h2>
+
+    <p class="mt-4 text-slate-400 leading-7">
+      I'm open to internships, junior software engineering roles and
+      collaborative projects.
+    </p>
+
+    <div class="mt-8 flex justify-center gap-4 flex-wrap">
+
+      <a href="mailto:kazeralph005@gmail.com"
+         class="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-xl text-white">
+        Email Me
+      </a>
+
+      <a href="https://github.com/kazeb005"
+         target="_blank"
+         class="border border-slate-600 hover:border-sky-400 px-6 py-3 rounded-xl">
+        GitHub
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="border-t border-slate-800 py-8 text-center text-slate-500">
+  © 2026 KAZE Ralph Bertrand • Built with HTML & Tailwind CSS
+</footer>
+
+<!-- ================= PDF GENERATOR ================= -->
+<script>
+async function downloadResume(){
+
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    let y = 20;
+
+    // Name
+    doc.setFont("helvetica","bold");
+    doc.setFontSize(22);
+    doc.text("KAZE Ralph Bertrand",20,y);
+
+    y += 8;
+    doc.setFont("helvetica","normal");
+    doc.setFontSize(13);
+    doc.text("IT Student • Aspiring Software Engineer",20,y);
+
+    y += 8;
+    doc.setFontSize(10);
+    doc.text("Kigali, Rwanda",20,y);
+    y += 5;
+    doc.text("Email: kazeralph005@gmail.com",20,y);
+    y += 5;
+    doc.text("Phone: +250 791 982 401",20,y);
+    y += 5;
+    doc.text("GitHub: github.com/kazeb005",20,y);
+
+    y += 8;
+    doc.line(20,y,190,y);
+
+    // Profile
+    y += 10;
+    doc.setFont("helvetica","bold");
+    doc.setFontSize(14);
+    doc.text("Professional Profile",20,y);
+
+    y += 7;
+    doc.setFont("helvetica","normal");
+    doc.setFontSize(11);
+
+    const profile =
+    "Information Technology student at AUCA with hands-on experience in software development, cybersecurity, Linux administration and DevOps infrastructure. Passionate about building secure and scalable applications. Currently developing Temba Concierge for Rwanda and East Africa.";
+
+    const profileLines = doc.splitTextToSize(profile,170);
+    doc.text(profileLines,20,y);
+
+    y += profileLines.length*6 + 8;
+
+    // Skills
+    doc.setFont("helvetica","bold");
+    doc.setFontSize(14);
+    doc.text("Technical Skills",20,y);
+
+    y += 7;
+    doc.setFont("helvetica","normal");
+    doc.setFontSize(11);
+
+    const skills = [
+      "Java, JavaScript, Node.js & Express",
+      "React Native (Expo)",
+      "MySQL, PostgreSQL & Directus",
+      "Docker Swarm, Traefik, Nginx, Apache2",
+      "Linux Administration & AWS EC2",
+      "Penetration Testing (Metasploit, CyberChef, wfuzz)"
+    ];
+
+    skills.forEach(s=>{
+      doc.text("• " + s,24,y);
+      y += 6;
+    });
+
+    y += 4;
+
+    // Projects
+    doc.setFont("helvetica","bold");
+    doc.setFontSize(14);
+    doc.text("Featured Projects",20,y);
+
+    y += 8;
+    doc.setFont("helvetica","normal");
+    doc.setFontSize(11);
+
+    const projects = [
+      ["Temba Concierge","Travel booking platform for Rwanda and East Africa using Next.js, React Native, Node.js, PostgreSQL and Directus."],
+      ["Hospital Management System","Java application implementing SOLID principles and the Strategy Design Pattern with MoMo payments."],
+      ["VAPT Security Labs","SQL injection, privilege escalation, reverse shells, credential capture and buffer overflow exploitation."],
+      ["Docker Swarm Infrastructure","Hardened multi-host deployment with Traefik, TLS, Apache2, Nginx, ModSecurity and UFW."]
+    ];
+
+    projects.forEach(p=>{
+      doc.setFont("helvetica","bold");
+      doc.text(p[0],20,y);
+      y += 6;
+
+      doc.setFont("helvetica","normal");
+      const lines = doc.splitTextToSize(p[1],165);
+      doc.text(lines,25,y);
+
+      y += lines.length*6 + 4;
+    });
+
+    // Education
+    doc.setFont("helvetica","bold");
+    doc.setFontSize(14);
+    doc.text("Education",20,y);
+
+    y += 8;
+    doc.setFont("helvetica","normal");
+    doc.setFontSize(11);
+
+    doc.text("BSc Information Technology (2024–2027)",20,y);
+    y += 6;
+    doc.text("Adventist University of Central Africa",25,y);
+
+    y += 10;
+    doc.text("Diploma in Software Development (2020–2023)",20,y);
+    y += 6;
+    doc.text("Lycee de Kicukiro APADE",25,y);
+
+    y += 10;
+
+    // Certifications
+    doc.setFont("helvetica","bold");
+    doc.setFontSize(14);
+    doc.text("Certifications",20,y);
+
+    y += 8;
+    doc.setFont("helvetica","normal");
+    doc.setFontSize(11);
+
+    doc.text("• Software Security & VAPT Practical Labs",24,y);
+    y += 6;
+    doc.text("• Java OOP & Design Patterns",24,y);
+    y += 6;
+    doc.text("• Docker Swarm & Linux Server Administration",24,y);
+
+    doc.save("KAZE_Ralph_Bertrand_Resume.pdf");
+}
+</script>
+
+</body>
+</html>
